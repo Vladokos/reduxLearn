@@ -3,7 +3,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { change } from "./changeText";
 
 export function Changer() {
-  const text = useSelector((state) => state.counter.text);
+  const text = useSelector((state) => state.changer.text);
   const dispatch = useDispatch();
 
   return (
@@ -13,3 +13,4 @@ export function Changer() {
     </div>
   );
 }
+
