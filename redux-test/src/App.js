@@ -4,7 +4,7 @@ import { Changer } from "./features/changeText/Changer";
 function App() {
   return (
     <div className="App">
-      <div className="myFirstApp">Hello click on this button</div>
+      <div className="myFirstApp">Hello click on this buttons</div>
       <Changer />
     </div>
   );

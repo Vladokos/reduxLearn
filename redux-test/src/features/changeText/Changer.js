@@ -1,6 +1,6 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { change } from "./changeText";
+import { decrypt, encrypt } from "./changeText";
 
 export function Changer() {
   const text = useSelector((state) => state.changer.text);
@@ -8,9 +8,9 @@ export function Changer() {
 
   return (
     <div>
-      <button onClick={() => dispatch(change())}>View text</button>
+      <button onClick={() => dispatch(decrypt())}>Decrypt message</button>
+      <button onClick={() => dispatch(encrypt())}>Encrypt message</button>
       <span>{text}</span>
     </div>
   );
 }
-

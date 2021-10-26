@@ -6,11 +6,14 @@ export const changeText = createSlice({
     text: "Secret message",
   },
   reducers: {
-    change: (state) => {
+    decrypt: (state) => {
       state.text = "Hello world!";
     },
+    encrypt: (state) => {
+      state.text = "Secret message";
+    }
   },
 });
-export const { change } = changeText.actions;
+export const { decrypt, encrypt } = changeText.actions;
 
 export default changeText.reducer;
