@@ -1,8 +1,9 @@
 import { configureStore } from "@reduxjs/toolkit";
-import changeText from "../features/changeText/changeText";
+
+import postsReucer from "../features/posts/postsSlice";
 
 export default configureStore({
   reducer: {
-    changer: changeText,
+    posts: postsReucer,
   },
 });
