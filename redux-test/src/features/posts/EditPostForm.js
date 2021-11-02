@@ -5,11 +5,10 @@ import { useHistory } from "react-router-dom";
 import { postUpdated } from "./postsSlice";
 
 export const EditPostForm = ({ match }) => {
-  console.log(match);
   const { postId } = match.params;
 
   const post = useSelector((state) =>
-    state.post.find((post) => post.id === postId)
+    state.posts.find((post) => post.id === postId)
   );
 
   const [title, setTitle] = useState(post.title);
